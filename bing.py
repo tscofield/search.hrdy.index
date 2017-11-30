@@ -1,7 +1,39 @@
 #!/usr/bin/env python3
 
+import sys
+
+# build dictionary of words
+# disctionaries in python are a method of storing information in arrays
+# it is concidental that we are storing a latin dictionary in a python
+# dictionary
+
+words = {}
+
+# fill in dictionary
+words['aestate'] = 'in summer'
+words['altera'] = 'a second'
+words['dum'] = 'while'
+
 print ('hello, welcome to search.hrdy.index')
-print ('enter the first letter of the latin word below')
+
+# Loop forever
+while (1):
+    # Prompt user, the \n makes a blank lines
+    print ('\n\nenter the first letter of the latin word below')
+    search = input()
+
+    # loop through each dictionary entry
+    for word, definition in words.items():
+        # check if the word starts with the character we are looking for
+        if word.startswith(search):
+            # output the word and definition
+            print (word, definition)
+
+# we should never get here the while loop will run forever
+# if we do get here exit cleanly
+sys.exit(0)
+
+
 search = input ()
 if search == ('a') or ('A'):    #search a
     print ('aestate - in summer')
