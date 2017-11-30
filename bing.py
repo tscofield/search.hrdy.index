@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 print ('hello, welcome to search.hrdy.index')
 print ('enter the first letter of the latin word below')
 search = input ()
@@ -71,4 +73,4 @@ if search == ('v') or ('V'):      #search V
     search = input ()
 if search == ('j') or ('k') or ('w') or ('x') or ('y') or ('z'):
     print ('unavailible')
-    search = input ()  
+    search = input ()
