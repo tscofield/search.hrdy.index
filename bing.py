@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# The line above is a shbang line, it is used on linux systems to define
+# the binary to use when execting this script
 
 import sys
 
